@@ -1,0 +1,143 @@
+/* blog section start  */
+#Blog {
+  width: 100%;
+  padding: 125px 0px 0px;
+}
+
+#Blog .blog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Blog .header-text {
+  width: 100%;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Blog .header-text h1 {
+  font-size: 45px;
+  margin-left: 12px;
+}
+
+#Blog .lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+
+}
+
+#Blog .lines .horizontal-rule {
+
+  height: 3px;
+  width: 35px;
+  background-color: #ef233c;
+}
+
+#Blog .lines .period {
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background-color: #ef233c;
+}
+
+#Blog .lines p {
+  color: #717171;
+  font-weight: 700;
+}
+
+
+#Blog .post-container {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+#Blog .post-container .post-part1 {
+  width: 480px;
+  height: 645px;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+#Blog .post-container .post-part2 {
+  width: 480px;
+  height: 645px;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+#Blog .post-container .blog-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: auto;
+  margin-top: -8px;
+  border-right: 1.5px solid #EDEDED;
+  border-bottom: 1.5px solid #EDEDED;
+  border-left: 1.5px solid #EDEDED;
+}
+
+.blog-img {
+  width: 450px;
+  height: 300px;
+  transition: all ease .5s;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-img:hover img {
+  scale: 1.2;
+}
+
+#Blog .post-container .blog-text h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#Blog .post-container .blog-text p {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #9E9285;
+}
+
+
+#Blog .post-container .blog-text .post-btn {
+  padding: 10px 18px;
+  margin-top: 10px;
+  background-color: #ef233c;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#Blog .post-container .blog-text .post-btn i {
+  font-size: 10px;
+  margin-left: 5px;
+  text-align: center;
+  font-weight: 800;
+}
+
+#Blog .post-container .blog-text .post-btn:hover {
+  background-color: #202020;
+}

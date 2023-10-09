@@ -1,0 +1,6 @@
+@media (max-width:900px) {
+    p:nth-child(1) {
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+      }
+}

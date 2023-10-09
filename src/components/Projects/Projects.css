@@ -1,0 +1,55 @@
+
+/* Start Project page start  */
+#project {
+    background-color: white;
+    padding: 10rem 2rem;
+  }
+  
+  
+  .project-section-header {
+    max-width: 640px;
+    color: #0a0a0a;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--color-white);
+    font-size: 2.6rem;
+  
+  }
+  
+  
+  .projects-section .project-grid {
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  
+  }
+  
+  .projects-section .project-grid .box {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+  }
+  
+  .projects-section .project-grid .box:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.02);
+  }
+  
+  .projects-section .project-grid .box img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 10px;
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .projects-section .project-grid .box p {
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: "Times", serif;
+    padding: 18px 5px;
+  }

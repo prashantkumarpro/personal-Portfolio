@@ -1,0 +1,184 @@
+
+  
+/* home page start  */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 120px 0 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(https://demo.htmlcodex.com/1011/developer-portfolio-template/img/hero-bg.jpg);
+    overflow: hidden;
+  
+  }
+  
+.home-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    gap: 80px;
+  }
+  
+  .home-page .right {
+    margin: 45px 0;
+    height: 311px;
+    width: 311px;
+    padding: 12px 18px;
+    color: #fff;
+    text-align: center;
+  
+  }
+  
+  .home-page .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid var(--color-border);
+    transition: .3s;
+    overflow: hidden;
+  
+  }
+  
+  .home-page .right img:hover {
+    transform: scale(1.2);
+  }
+  
+  .home-page .left {
+    margin: 45px 0;
+    color: #ffffff;
+    width: 550px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .home-page .left p {
+    /* padding-top: 20px; */
+    font-size: 1.2rem;
+    margin: 0 0 15px;
+  }
+  
+  .home-page .left h1 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+  }
+  
+  .home-page .left h2 {
+    margin: 0 0 15px;
+  }
+  
+  
+  .home-page .left h2 span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+  }
+  
+  
+  .home-page .btn-gurup button {
+    padding: 16px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 10px 0 0;
+    margin-right: 20px;
+    color: #0f0f0f;
+  
+  }
+  
+  .btn-gurup button:hover {
+    background-color: var(--color-bg-parimary);
+    color: var(--color-white);
+    /* border: 2px solid var(--color-white); */
+    border: 1.5px solid white;
+    transition: 0.3s;
+  }
+
+
+  @media (max-width:320px) {
+    .logo {
+  
+        font-size: 1.5rem;
+    }
+  
+    .home-page .right {
+        width: unset;
+        height: unset;
+    }
+  
+    .home-page .left {
+        padding: 0;
+    }
+  
+    .btn-gurup button {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 12px 15px;
+    }
+  
+    .left h1:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+  
+    .left p span {
+        font-size: 1.8rem;
+    }
+  
+    .left h1:nth-of-type(2) {
+        font-size: 2.1rem;
+    }
+  }
+  
+
+
+
+
+
+  @media (max-width: 900px){
+      /* home page style  */
+      .home-page {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .left {
+        width: 100%;
+        height: 100%;
+        padding: 14px 45px;
+        text-align: center;
+    }
+  
+    .left span {
+        color: var(--color-parimary-dark);
+        /* font-size: 2.8rem; */
+        font-weight: 200;
+    }
+  
+    .left p {
+        font-size: 1.5rem;
+        font-family: Tahoma, sans-serif;
+  
+    }
+  
+  
+    p:nth-child(1) {
+        font-size: 3rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+  
+  
+  }
