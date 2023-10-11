@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
+import Typed from 'typed.js';
+
 
 
 const Home = () => {
+
+  useEffect(() => {
+    // Initialize Typed.js within the useEffect to ensure it runs after the component is mounted.
+    const options = {
+      strings: ["front end developer", "Web Developer", "UX Designer", "full stack developer"],
+      typeSpeed: 70,
+      backSpeed: 55,
+      loop: true
+    };
+
+    const typed = new Typed(".input", options);
+
+    // Clean up the Typed instance when the component unmounts.
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div id='home'>
@@ -14,7 +34,7 @@ const Home = () => {
           <div className="left">
             <p>Hi, I am </p>
             <h1> Prashant Kumar</h1>
-            <h2> <span className="input">front end developer</span></h2>
+            <h2> a <span className="input"> front end developer</span></h2>
             <div className="btn-gurup">
               <button>Hire me</button>
               <button>Download CV</button>
@@ -23,7 +43,7 @@ const Home = () => {
 
         </div>
       </div>
-   
+
     </>
   )
 }
