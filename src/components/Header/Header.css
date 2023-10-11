@@ -18,7 +18,6 @@
 
 .logo {
     font-size: 2rem;
-    text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
     transition: .5s;
@@ -69,11 +68,6 @@ ul li {
 
 }
 
-.hero a .active {
-    color: #0a0a0a;
-
-}
-
 .hero a {
     display: block;
     color: var(--color-white);
@@ -85,8 +79,9 @@ ul li {
     font-weight: 600;
 }
 
-.hero .active {
-    color: #151515;
+/* By default, an active class is added to a <NavLink> component when it is active so you can use CSS to style it. */
+.hero a.active {
+    color: #101010;
 }
 
 .hero a:hover {
@@ -206,6 +201,7 @@ ul li {
     .ham_menu {
         display: block;
     }
+
     /* .ham_close {
         display: none;
     } */
@@ -214,7 +210,7 @@ ul li {
         display: none;
         height: 100vh;
         width: 100%;
-     
+
 
     }
 
