@@ -7,21 +7,21 @@ import Typed from 'typed.js';
 const Home = () => {
 
   useEffect(() => {
-    // Initialize Typed.js within the useEffect to ensure it runs after the component is mounted.
     const options = {
-      strings: ["front end developer", "Web Developer", "UX Designer", "full stack developer"],
-      typeSpeed: 70,
-      backSpeed: 55,
-      loop: true
-    };
+      strings: ['front end developer', 'JavaScript developer', 'full stack developer', 'UX designer'],
+      typeSpeed: 55,
+      backSpeed: 75,
+      loop: true,
+    }
+    const typed = new Typed('.input', options);
 
-    const typed = new Typed(".input", options);
 
-    // Clean up the Typed instance when the component unmounts.
     return () => {
+      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-  }, []);
+
+  }, [])
 
   return (
     <>
