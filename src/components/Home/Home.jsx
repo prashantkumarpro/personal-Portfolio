@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import './Home.css'
 import Typed from 'typed.js';
 
-
-
 const Home = () => {
 
   useEffect(() => {

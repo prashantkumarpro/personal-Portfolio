@@ -53,3 +53,8 @@
     font-family: "Times", serif;
     padding: 18px 5px;
   }
+  @media (max-width:420px) {
+    .projects-section .project-grid{
+    padding: 0;
+    }
+  }
