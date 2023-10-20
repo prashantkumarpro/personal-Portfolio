@@ -42,16 +42,16 @@ const Contact = () => {
 
                 <div className="form-box">
                     <h2>Contact me</h2>
-                    <label htmlFor="name">Name<sup>*</sup>
+                    <label htmlFor="name">Name
                         <input type="text" name="name" id="name" placeholder="enter name..." ref={nameRef} required />
                     </label>
 
 
-                    <label id="email-label">Email<sup>*</sup>
+                    <label id="email-label">Email
                         <input type="email" placeholder="enter email..." ref={emailRef} name="email" required />
                     </label>
 
-                    <label htmlFor="message">message<sup >*</sup>
+                    <label htmlFor="message">message
                         <textarea name="message" placeholder='type message here' rows="3" cols="30" ref={messageRef}required></textarea>
                     </label>
 
