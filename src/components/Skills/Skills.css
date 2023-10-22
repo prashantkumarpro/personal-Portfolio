@@ -8,19 +8,25 @@
   
   .skill-header {
     width: 100%;
-    margin-bottom: 70px;
-    padding: 15px 0px;
+    margin-bottom: 55px;
+    padding-top: 55px;
     display: grid;
     place-items: center;
     text-align: center;
+    
   }
   
   .skill-header h2 {
-    margin-bottom: -1px;
+    font-size: 2rem;
+    margin-bottom: 18px;
   
   }
   .skill-header h2 span{
     color: #ef233c;
+   
+  }
+  .skill-header p{
+    font-size: 1.2rem;
   }
   
   
@@ -177,4 +183,9 @@
         width: 60%;
     }
   }
-  
+  @media (max-width-900) {
+    .info p {
+      font-size: 1rem;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  }

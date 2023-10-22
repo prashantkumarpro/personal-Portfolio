@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css'
 
+
 const Contact = () => {
     const form = useRef();
     let nameRef = useRef(null);
@@ -9,31 +10,33 @@ const Contact = () => {
     let messageRef = useRef(null);
 
     const nameHendlar = () => {
-     
-            let userName = nameRef.current.value.toUpperCase();
-            nameRef.current.value = userName;
-        
+        let userName = nameRef.current.value.toUpperCase();
+        nameRef.current.value = userName;
     }
 
+    const emailHendlar = ()=>{
+        let userEmail = emailRef.current.value;
+        let emailPattern = '@.'
+        console.log(userEmail.includes(emailPattern))
+    }
     const messageHandler = () => {
         const userMessage = messageRef.current.value;
         const firstChar = userMessage.charAt(0).toUpperCase();
         const restOfMessage = userMessage.slice(1);
         messageRef.current.value = firstChar + restOfMessage;
-     }
-     
+    }
+
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_04h9oyt', 'template_hgw3cdm', form.current, 'PJBv1B-lysjDL9jhd')
             .then((result) => {
-
-
                 if (nameRef.current.value === '') {
                     alert('Please fill your name')
                     return false;
-                } if (emailRef.current.value === '') {
+                }
+                if (emailRef.current.value === '') {
                     alert('Please fill your email')
                     return false;
                 }
@@ -64,28 +67,26 @@ const Contact = () => {
 
     return (
         <>
-            {/* <!-- contact page start from here  --> */}
             <form id="contact" className="form-container" ref={form} onSubmit={sendEmail}>
-
+                
                 <div className="my-img">
-                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                    <img src="https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374"
                         alt="" />
                 </div>
-
                 <div className="form-box">
-                    <h2>Contact me</h2>
+                <h2>Contact me here</h2>
                     <label htmlFor="name">Name
-                        <input type="text" name="name" id="name" placeholder="enter name..." ref={nameRef} onChange={nameHendlar} />
+                        <input type="text" name="name" id="name" placeholder="Enter name..." ref={nameRef} onChange={nameHendlar} />
                     </label>
 
 
                     <label id="email-label">Email
-                        <input type="email" placeholder="enter email..." ref={emailRef} name="email" />
+                        <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
                     </label>
 
                     <label htmlFor="message">Message
                         <textarea name="message"
-                            placeholder='type message here'
+                            placeholder='Type message here'
                             rows="3"
                             cols="30"
                             ref={messageRef}
@@ -99,13 +100,13 @@ const Contact = () => {
 
                 </div>
 
+
             </form>
         </>
     )
 }
 
 export default Contact
-
 
 
 

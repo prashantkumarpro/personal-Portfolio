@@ -15,9 +15,13 @@ const About = () => {
                         into
                         engaging
                         interfaces that leave a lasting impact.</p>
+                        <br />
+                        <div className="icon">
+                            
+                        </div>
                 </div>
                 <div className="right">
-                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                    <img src="https://images.unsplash.com/photo-1543269664-647163ef2ee4?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470"
                         alt=""/>
                 </div>
             </div>

@@ -1,19 +1,21 @@
 
 /* Start Project page start  */
 #project {
-    background-color: white;
-    padding: 10rem 2rem;
+  background-color: white;
+  padding: 10rem 0rem;
   }
   
   
   .project-section-header {
+    text-align: center;
     max-width: 640px;
     color: #0a0a0a;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 2.5rem auto;
     border-bottom: 0.2rem solid var(--color-white);
-    font-size: 2.6rem;
-  
-  }
+    font-size: 2.1vw;
+    text-transform: uppercase;
+}
+
   
   
   .projects-section .project-grid {
