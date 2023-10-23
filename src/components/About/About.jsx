@@ -7,7 +7,8 @@ const About = () => {
 <section id="about">
             <div className="about_me">
                 <div className="left">
-                    <h2>Learn more about me</h2>
+                    <h2>visit my portfolio & hire me</h2>
+                    <h1>About me</h1>
                     <p>I have a strong foundation in HTML, CSS, and JavaScript, and I'm constantly learning and
                         exploring
                         new
@@ -15,9 +16,10 @@ const About = () => {
                         into
                         engaging
                         interfaces that leave a lasting impact.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis minus illum doloremque, enim ea odit, sunt incidunt porro earum praesentium eaque maiores molestiae, cumque libero.</p>
                         <br />
-                        <div className="icon">
-                            
+                        <div className="cv-btn">
+                       <a href="#contact">Download My CV</a>
                         </div>
                 </div>
                 <div className="right">
