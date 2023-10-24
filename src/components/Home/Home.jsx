@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './Home.css'
 import Typed from 'typed.js';
 import img from '/src/home-img.png'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -30,14 +31,15 @@ const Home = () => {
             <p>Hi, I am </p>
             <h1> Prashant Kumar</h1>
             <h2> a <span className="input"> front end developer</span></h2>
-            <div className="btn-gurup">
-              {/* <button>Hire me</button> */}
-            </div>
+            <Link className='btn-gurup' to={'/Contatc'}>
+              <button>Hire me</button>
+            </Link>
+
+
           </div>
+
           <img src={img} alt="" className='bg' />
-          {/* <div id="img-me" className="right">
-         
-          </div> */}
+
         </div>
       </div>
 

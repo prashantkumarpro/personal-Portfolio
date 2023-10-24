@@ -1,42 +1,32 @@
 /* home page start  */
 
 #home {
-    background-color: #ef233c;
-    /* background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(https://demo.htmlcodex.com/1011/developer-portfolio-template/img/hero-bg.jpg); */
-   
-  
+    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(https://demo.htmlcodex.com/1011/developer-portfolio-template/img/hero-bg.jpg);
+    padding: 80px 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .home-page {
-    width: 100vw;
     height: calc(100vh - 5rem);
-    background-color: #E4243C;
+    width: 100vw;
     margin: 0 auto;
-    max-width:73.5rem;
-    /* background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(https://demo.htmlcodex.com/1011/developer-portfolio-template/img/hero-bg.jpg); */
+    max-width: 75rem;
     overflow: hidden;
-
+    position: relative;
+    padding: 0 2rem;
 }
+
 
 .bg {
-    padding-top: 8rem;
     position: absolute;
-    top: -5rem;
+    top: 0;
     right: 0;
-    object-fit: contain;
+    padding-top: 8rem;
+    object-fit: cover;
     height: 100vh;
     z-index: 1;
-}
-
-.home-page .right img {
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover;
-    border-radius: 50%;
-    border: 10px solid var(--color-border);
-    transition: .3s;
-    overflow: hidden; */
-
 }
 
 /* .home-page .right img:hover {
@@ -44,15 +34,15 @@
 } */
 
 .home-page .left {
-    position: relative;
+    position: absolute;
     margin: 45px 0;
     color: #ffffff;
-    width: 550px;
-    height: 475px;
+    height: 100vh;
+    width: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   z-index: 2;
+    z-index: 2;
 
 }
 
@@ -104,10 +94,14 @@
 }
 
 
-@media (max-width:320px) {
+@media (max-width : 412px) {
     .logo {
 
         font-size: 1.5rem;
+    }
+
+    .bg {
+        right: 2rem;
     }
 
     .home-page .right {
@@ -146,16 +140,15 @@
 @media (max-width: 900px) {
 
     /* home page style  */
-    .home-page {
-        flex-direction: column;
-        gap: 10px;
+    .bg  {
+        right: -10rem;
     }
 
     .left {
-        width: 100%;
-        height: 100%;
-        padding: 14px 45px;
-        text-align: center;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+
     }
 
     .left span {
@@ -169,4 +162,25 @@
         font-family: Tahoma, sans-serif;
 
     }
+}
+
+
+@media screen and (max-width:912px) {
+    .bg {
+        left: 1rem;
+    }
+
+    .left {
+        text-align: left;
+
+    }
+
+}
+
+
+@media screen and (max-width:1024px) {
+    .home-page {
+        padding: 0 3rem;
+    }
+
 }

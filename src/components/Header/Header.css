@@ -10,9 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--color-bg-parimary);
+    /* background: transparent; */
     border-bottom: 1px dashed rgba(256, 256, 256, .2);
-    padding: 0px 4vw;
+    padding: 3rem 4rem;
     z-index: 998;
 }
 
