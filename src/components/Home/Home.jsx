@@ -28,10 +28,10 @@ const Home = () => {
       <div id='home'>
         <div className="home-page">
           <div className="left">
-            <p>Hi, I am </p>
-            <h1> Prashant Kumar</h1>
-            <h2> a <span className="input"> front end developer</span></h2>
-            <Link className='btn-gurup' to={'/Contatc'}>
+            <p>Hi, I am </p> <br />
+            <h1> Prashant Kumar</h1><br />
+            <h2><span className="input"> front end developer</span></h2>
+            <Link className='btn-gurup' >
               <button>Hire me</button>
             </Link>
 

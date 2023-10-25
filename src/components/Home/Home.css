@@ -35,37 +35,35 @@
 
 .home-page .left {
     position: absolute;
-    margin: 45px 0;
+    margin: 75px 0;
     color: #ffffff;
     height: 100vh;
     width: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    top: 25vh;
     z-index: 2;
 
 }
 
 .home-page .left p {
-    /* padding-top: 20px; */
-    font-size: 1.2rem;
-    margin: 0 0 15px;
+    padding-top: 20px;
+    font-size: 1.57rem;
+    font-weight: 600;
 }
 
 .home-page .left h1 {
-    font-size: 3rem;
-    margin: 0 0 15px;
+    margin-top: -8px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    /* font-stretch:expanded; */
+
 }
 
-.home-page .left h2 {
-    margin: 0 0 15px;
-}
-
-
-.home-page .left h2 span {
-    font-size: 2rem;
-    color: white;
-    font-weight: 500;
+.home-page .left h2  {
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 5px 0;
 }
 
 
@@ -114,7 +112,6 @@
     }
 
     .btn-gurup button {
-        width: 100%;
         font-size: 1.5rem;
         padding: 12px 15px;
     }
@@ -140,20 +137,14 @@
 @media (max-width: 900px) {
 
     /* home page style  */
-    .bg  {
+    .bg {
         right: -10rem;
     }
 
-    .left {
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-
-    }
+    .left {}
 
     .left span {
-        color: var(--color-parimary-dark);
-        /* font-size: 2.8rem; */
+        font-size: 2.8rem;
         font-weight: 200;
     }
 
