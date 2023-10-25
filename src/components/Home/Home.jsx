@@ -25,23 +25,21 @@ const Home = () => {
 
   return (
     <>
-      <div id='home'>
-        <div className="home-page">
-          <div className="left">
+      <section id='home'>
+        <div className="intro">
+          <div className="intro-contatnt">
             <p>Hi, I am </p> <br />
             <h1> Prashant Kumar</h1><br />
             <h2><span className="input"> front end developer</span></h2>
             <Link className='btn-gurup' >
               <button>Hire me</button>
             </Link>
-
-
           </div>
 
           <img src={img} alt="" className='bg' />
 
         </div>
-      </div>
+      </section>
 
     </>
   )
