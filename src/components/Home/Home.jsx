@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Home.css'
 import Typed from 'typed.js';
-import img from '/src/home-img.png'
+import img from '/home-img.png'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -28,8 +28,8 @@ const Home = () => {
       <section id='home'>
         <div className="intro">
           <div className="intro-contatnt">
-            <p>Hi, I am </p> <br />
-            <h1> Prashant Kumar</h1><br />
+            <p>Hi, I am </p> 
+            <h1> Prashant Kumar</h1>
             <h2><span className="input"> front end developer</span></h2>
             <Link className='btn-gurup' >
               <button>Hire me</button>
