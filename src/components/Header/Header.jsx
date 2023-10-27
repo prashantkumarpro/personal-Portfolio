@@ -33,7 +33,7 @@ const Header = () => {
                     <i className="ri-menu-3-line ham_menu"
                         style={{ display: navActive ? 'none' : 'block' }}></i>
                     <i className="ri-close-line ham_close"
-                        style={{ display: navActive ? 'block' : 'none', fontSize: '35px' }} ></i>
+                        style={{ display: navActive ? 'block' : 'none', fontSize: '3.5rem' }} ></i>
                 </div>
             </header >
 

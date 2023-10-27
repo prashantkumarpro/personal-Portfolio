@@ -95,7 +95,7 @@
     }
 
     .bg {
-        right: 2rem;
+        left: -7rem;
     }
 
     .intro-contatnt {
@@ -150,7 +150,7 @@
 
 @media screen and (max-width:912px) {
     .bg {
-        left: 1rem;
+        left: -3rem;
     }
 
     .left {
