@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Header.css'
 
 const Header = () => {
     const [navActive, setNavActive] = useState(false)
-
+    
     const navActiveHandler = () => {
         setNavActive(!navActive)
 
@@ -14,11 +14,12 @@ const Header = () => {
         <>
 
             <header className="hero">
-                <div className="logo">PortFolio</div>
+                <NavLink className="logo" to="/" >PortFolio
+                </NavLink>
                 <nav id="navbar" className={`nav-links ${navActive ? 'nav-active' : ''}`} >
-                    <ul className={` links ${navActive ? 'nav-active' : ''}`} 
-                     onClick={navActiveHandler}>
-{/* By default, an active class is added to a <NavLink> component when it is active so you can use CSS to style it. */}
+                    <ul className={` links ${navActive ? 'nav-active' : ''}`}
+                        onClick={navActiveHandler}>
+                        {/* By default, an active class is added to a <NavLink> component when it is active so you can use CSS to style it. */}
                         <li> <NavLink to="/">Home</NavLink></li>
                         <li> <NavLink to="About" >About</NavLink></li>
                         <li><NavLink to="Skills">Skills</NavLink></li>

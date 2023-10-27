@@ -14,20 +14,18 @@
     z-index: 998;
 }
 
-.logo {
+.logo:nth-child(1) {
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
     color: #fff;
     cursor: pointer;
 }
 
-
-.logo:hover{
+.logo:nth-child(1):hover {
     color: #0a0a0a;
 }
-
 
 .ham-button {
     position: absolute;
@@ -192,9 +190,10 @@ ul li {
 }
 
 @media (max-width: 900px) {
-.hero{
-    height: auto;
-}
+    .hero {
+        margin-top: -28px;
+        height: auto;
+    }
 
     .ham-button {
         display: flex;

@@ -79,8 +79,10 @@ const Contact = () => {
                         <input type="text" name="name" id="name" placeholder="Enter name..." ref={nameRef} onChange={nameHendlar} />
                     </label>
 
-
                     <label id="email-label">Email
+                        <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
+                    </label>
+                    <label id="subject">Subject
                         <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
                     </label>
 
