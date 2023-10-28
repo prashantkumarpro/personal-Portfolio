@@ -8,6 +8,7 @@ const Contact = () => {
     let nameRef = useRef(null);
     let emailRef = useRef(null);
     let messageRef = useRef(null);
+    let subjectRef = useRef(null)
 
     const nameHendlar = () => {
         let userName = nameRef.current.value.toUpperCase();
@@ -53,12 +54,14 @@ const Contact = () => {
                 nameRef.current.value = '';
                 emailRef.current.value = '';
                 messageRef.current.value = '';
+                subjectRef.current.value = '';
             }, (error) => {
                 alert("sending message fialled");
                 console.log(error)
                 nameRef.current.value = '';
                 emailRef.current.value = '';
                 messageRef.current.value = '';
+                subjectRef.current.value = '';
             });
 
     };
@@ -83,7 +86,7 @@ const Contact = () => {
                         <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
                     </label>
                     <label id="subject">Subject
-                        <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
+                        <input type="text" placeholder="Enter email..." ref={subjectRef} name="email" onChange={emailHendlar} />
                     </label>
 
                     <label htmlFor="message">Message
