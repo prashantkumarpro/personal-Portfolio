@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import './Home.css'
 import Typed from 'typed.js';
 import img from '/home-img.png'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Home = () => {
 
@@ -31,9 +31,9 @@ const Home = () => {
             <p>Hi, I am </p> 
             <h1> Prashant Kumar</h1>
             <h2><span className="input"> front end developer</span></h2>
-            <Link className='btn-gurup' >
+            <NavLink className='btn-gurup' to="/Contact" >
               <button>Hire me</button>
-            </Link>
+            </NavLink>
           </div>
 
           <img src={img} alt="" className='bg' />
