@@ -2,26 +2,30 @@
 #about {
   width: 100%;
   height: 100%;
-  margin: -45px -16px -30px;
-  padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   color: var(--color-white);
   overflow: hidden;
   background-color: #FFFFFF;
 }
 
 .about_me {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
   gap: 30px;
-  padding-top: 7rem;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .about_me .right {
   height: 100vh;
-  width: 100%;
+  max-width: 50%;
+  padding: 0;
 
 }
 
@@ -33,13 +37,9 @@
 
 .about_me .left {
   color: #101010;
-  width: 100%;
-  max-width: 650px;
-  height: 486px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  max-width: 50%;
   padding: 0 3.2rem;
+  padding-top: 5rem;
 
 }
 
@@ -108,7 +108,7 @@
 
   #about {
     margin: -50px 0;
-    height: 100%;
+    max-height: 100vh;
     padding: 4px 0;
 
   }
@@ -116,32 +116,31 @@
   .about_me {
     flex-direction: column-reverse;
     margin: 30px 0;
+    gap: 2px;
+  }
+
+  .about_me .left {
+    position: relative;
+    top: -10%;
   }
 }
 
 @media (max-width:900px) {
+  .about_me {
+    width: 100%;
+  }
 
-
-
-  /* .about_me .left {
-    margin-top: 90px;
-    width: 100vw;
-    padding: 0;
-
-  } */
-  /* 
-  .about_me .left h2 {
-    margin-top: 60px;
+  .about_me .left {
+    max-width: 80vw;
   }
 
   .about_me .right {
-    margin-top: 120px;
-    width: 100vw;
+    max-width: 100vw;
+  }
 
-  } */
-
-
-
+  .about_me .left h2 {
+    margin-top: 60px;
+  }
 }
 
 
@@ -175,14 +174,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media (max-width:1024px) {
   #about {
     position: relative;
@@ -193,11 +184,11 @@
   .about_me {
     position: absolute;
     margin-right: -15px;
-    margin-left: -15px;
+
   }
 
   .about_me .left {
-    padding: 0 40px;
+    padding-top: 10rem;
     margin: 0 auto;
   }
 
