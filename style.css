@@ -46,8 +46,16 @@ body {
   --color-border: #373737;
 }
 
-.portfolio-svg {
-  fill: green;
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5FADC3;
+  position: absolute;
+  z-index: 9;
+  transform: translate(-50%, -50%) scale(0);
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 /* header start  */
