@@ -1,11 +1,35 @@
 import React from 'react'
 import './Projects.css'
+import gsap from 'gsap'
 const Projects = () => {
+  const onMmove = (e) => {
+    console.log(`${e.pageX}px`)
+    gsap.to('.cursor', {
+        x: `${e.pageX}px`,
+        y: `${e.pageY}px`,
+        transform: `translate(-50%, -50%)`
+    })
+}
+const onEnter = () => {
+    gsap.to('.cursor', {
+        scale: 1
+    })
+}
+const onLeave = () => {
+    gsap.to('.cursor', {
+        scale: 0
+    })
+}
+
+
   return (
     <>
-
+      <div className="cursor"></div>
       {/* <!-- project section start  --> */}
-      <section id="project" className="projects-section">
+      <section id="project" className="projects-section"
+      onMouseMove={onMmove}
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}>
         <h2 className="project-section-header">These are some of my projects</h2>
 
         <div className="project-grid">

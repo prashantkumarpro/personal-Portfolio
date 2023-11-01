@@ -1,11 +1,36 @@
 import React from 'react'
 import './Skills.css'
+import gsap from 'gsap'
 
 const Skills = () => {
+    const onMmove = (e) => {
+        console.log(`${e.pageX}px`)
+        gsap.to('.cursor', {
+            x: `${e.pageX}px`,
+            y: `${e.pageY}px`,
+            transform: `translate(-50%, -50%)`
+        })
+    }
+    const onEnter = () => {
+        gsap.to('.cursor', {
+            scale: 1
+        })
+    }
+    const onLeave = () => {
+        gsap.to('.cursor', {
+            scale: 0
+        })
+    }
+    
+
   return (
    <>
     {/* <!-- skill section start from here  --> */}
-        <section id="Skills">
+    <div className="cursor"></div>
+        <section id="Skills"
+          onMouseMove={onMmove}
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}>
 
             <div className="skill-header">
                 <h2>My <span>Skills</span> </h2>
