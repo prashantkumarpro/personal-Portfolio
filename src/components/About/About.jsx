@@ -24,11 +24,12 @@ const About = () => {
         <>
             <div className="cursor"></div>
             <section id="about">
-                <div className="about_me"
-                    onMouseMove={onMmove}
-                    onMouseEnter={onEnter}
-                    onMouseLeave={onLeave}>
-                    <div className="left">
+                <div className="about_me" onMouseMove={onMmove} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+                    <div className="box" id='bg'>
+                        <img src="https://images.unsplash.com/photo-1543269664-647163ef2ee4?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470"
+                            alt="" />
+                    </div>
+                    <div className="box" id='intro'>
                         <h2>visit my portfolio & hire me</h2>
                         <h1>About me</h1>
                         <p>I have a strong foundation in HTML, CSS, and JavaScript, and I'm constantly learning and
@@ -44,10 +45,7 @@ const About = () => {
                             <a href="#contact">Download My CV</a>
                         </div>
                     </div>
-                    <div className="right">
-                        <img src="https://images.unsplash.com/photo-1543269664-647163ef2ee4?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470"
-                            alt="" />
-                    </div>
+
                 </div>
             </section>
         </>
