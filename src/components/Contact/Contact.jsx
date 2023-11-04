@@ -15,7 +15,7 @@ const Contact = () => {
         nameRef.current.value = userName;
     }
 
-    const emailHendlar = ()=>{
+    const emailHendlar = () => {
         let userEmail = emailRef.current.value;
         let emailPattern = '@.'
         console.log(userEmail.includes(emailPattern))
@@ -71,13 +71,14 @@ const Contact = () => {
     return (
         <>
             <form id="contact" className="form-container" ref={form} onSubmit={sendEmail}>
-                
-                <div className="my-img">
+
+                <div className="my-img box">
                     <img src="https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374"
                         alt="" />
                 </div>
-                <div className="form-box">
-                <h2>Contact me here</h2>
+                <div className="form-box box">
+                    <h2>Contact me here</h2>
+
                     <label htmlFor="name">Name
                         <input type="text" name="name" id="name" placeholder="Enter name..." ref={nameRef} onChange={nameHendlar} />
                     </label>
@@ -85,6 +86,7 @@ const Contact = () => {
                     <label id="email-label">Email
                         <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
                     </label>
+
                     <label id="subject">Subject
                         <input type="text" placeholder="Enter email..." ref={subjectRef} name="email" onChange={emailHendlar} />
                     </label>

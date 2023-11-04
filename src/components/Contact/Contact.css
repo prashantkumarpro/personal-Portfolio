@@ -162,7 +162,6 @@ textarea {
   object-fit: cover;
 
 }
-
 .form-box {
   padding: 90px 0 90px 45px;
   display: flex;
@@ -173,7 +172,7 @@ textarea {
 }
 
 .form-box h2 {
-  padding-top:60px;
+  padding-top: 60px;
   text-align: center;
   margin: 0 auto;
   font: 300 4rem;
@@ -252,5 +251,12 @@ textarea {
   textarea {
     width: 100%;
 
+  }
+}
+
+@media (max-width:600px) {
+  .form-container {
+    flex-direction: column;
+    min-height: 100vh;
   }
 }
