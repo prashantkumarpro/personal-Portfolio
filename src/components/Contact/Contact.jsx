@@ -71,41 +71,70 @@ const Contact = () => {
     return (
         <>
             <form id="contact" className="form-container" ref={form} onSubmit={sendEmail}>
-
-                <div className="my-img box">
-                    <img src="https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374"
-                        alt="" />
+                <div className="heading">
+                    <p>contact</p>
+                    <h2>Contact With Me</h2>
                 </div>
-                <div className="form-box box">
-                    <h2>Contact me here</h2>
+                <div className="contact-page">
+                    <div className="box" id='left'>
+                        <div className="img-co">
+                            <img src="https://rainbowit.net/html/inbio/assets/images/contact/contact1.png"
+                                alt="" />
+                        </div>
+                        <div className="info">
+                            <h2>Prashant Dvlpr</h2>
+                            <p>Chief Operating Officer</p>
+                            <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                            <div className="contact">
+                                <span>Phone: +01234567890</span>
+                                <span>Email: admin@example.com</span>
+                            </div>
+                        </div>
+                        <div className="icon-con">
+                            <p>FIND WITH ME</p>
+                            <div className="icon">
+                                <i class="ri-facebook-fill"></i>
+                                <i class="ri-linkedin-fill"></i>
+                                <i class="ri-instagram-fill"></i>
+                            </div>
 
-                    <label htmlFor="name">Name
-                        <input type="text" name="name" id="name" placeholder="Enter name..." ref={nameRef} onChange={nameHendlar} />
-                    </label>
-
-                    <label id="email-label">Email
-                        <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
-                    </label>
-
-                    <label id="subject">Subject
-                        <input type="text" placeholder="Enter email..." ref={subjectRef} name="email" onChange={emailHendlar} />
-                    </label>
-
-                    <label htmlFor="message">Message
-                        <textarea name="message"
-                            placeholder='Type message here'
-                            rows="3"
-                            cols="30"
-                            ref={messageRef}
-                            onChange={messageHandler}
-                        ></textarea>
-                    </label>
-
-                    <div className="btn-gurup">
-                        <button type="submit" className="btn">Send</button>
+                        </div>
                     </div>
+                    <div className="box" id='right'>
 
+                        <label htmlFor="name">Name
+                            <input type="text" name="name" id="name" placeholder="Enter name..." ref={nameRef} onChange={nameHendlar} />
+                        </label>
+
+                        <label id="email-label">Email
+                            <input type="email" placeholder="Enter email..." ref={emailRef} name="email" onChange={emailHendlar} />
+                        </label>
+
+                        <label id="subject">Subject
+                            <input type="text" placeholder="Enter subject..." ref={subjectRef} name="email" onChange={emailHendlar} />
+                        </label>
+
+                        <label htmlFor="message">Message
+                            <textarea name="message"
+                                placeholder='Type message here'
+                                rows="3"
+                                cols="30"
+                                ref={messageRef}
+                                onChange={messageHandler}
+                            ></textarea>
+                        </label>
+
+                        <div className="buttons">
+                            <button type="submit" className="btn">Send Message
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+
+                        </div>
+
+
+                    </div>
                 </div>
+
 
 
             </form>
