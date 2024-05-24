@@ -36,24 +36,24 @@ const onLeave = () => {
 
           <div className="box">
             <a
-              href="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80">
+              href="https://two-good-co-sigma.vercel.app/" target='_blank' >
               <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
                 alt="project1" />
             </a>
-            <p className="project-title">Project One</p>
+            <p className="project-title">To Goods.Co</p>
           </div>
-          <div className="box"> <a href="">
+          <div className="box"> <a href="https://amazon-five-amber.vercel.app/" target='_blank'>
             <img src="https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="project2" />
           </a>
 
-            <p>Project 2</p>
+            <p>Amazon Clone</p>
           </div>
-          <div className="box"> <a href="">
+          <div className="box"> <a href="https://weather-eight-murex.vercel.app/" target='_blank'>
             <img src="https://images.unsplash.com/photo-1530695440407-21fef47230b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
               alt="project3" />
           </a>
-            <p>Project 3</p>
+            <p>Weather App</p>
           </div>
           <div className="box"> <a href="">
             <img src="https://images.unsplash.com/photo-1505274664176-44ccaa7969a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"

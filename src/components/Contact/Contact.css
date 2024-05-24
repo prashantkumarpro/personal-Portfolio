@@ -26,6 +26,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 2rem 1rem;
+
 }
 
 .heading p {
@@ -40,13 +41,14 @@
   text-transform: capitalize;
   font-size: 4vw;
   color: #3C3E41;
+  margin-top: -20px;
 }
 
 
 
 .form-container #left {
   width: 34vw;
-  min-height: 100vh;
+  min-height: 54vh;
   margin-right: 50px;
   background-color: #E5EAEE;
   color: #0b0b0b;
@@ -131,7 +133,7 @@
 #right {
   padding: 5px 50px;
   width: 66vw;
-  min-height: 100vh;
+  min-height: 54vh;
   background-color: #E5EAEE;
   color: #0b0b0b;
   border-radius: 10px;
